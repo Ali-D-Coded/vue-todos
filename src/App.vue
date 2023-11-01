@@ -1,14 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+import TodoHeader from "./components/TodoHeader.vue";
 </script>
 
 <template>
-  <h1
-  class="text-3xl font-bold underline text-green-400 bg-slate-200 text-center h-20"
-  >
-  Hello world!
-</h1>
-<RouterView />
+  <TodoHeader />
+  <RouterView />
 </template>
 
 <style scoped></style>
