@@ -6,6 +6,7 @@ const emit = defineEmits(["create-todo"]);
 const todoState = reactive({
   todo: "",
   isInvalid: false,
+  isEditable: false,
   errMsg: "",
 });
 
