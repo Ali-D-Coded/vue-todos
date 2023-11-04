@@ -11,7 +11,7 @@ watch(todoList, () => setItemsToLocalStorage(), { deep: true });
 const fetchTodoList = () => {
   const savedTodoList = JSON.parse(localStorage.getItem("todoList"));
   console.log(savedTodoList);
-  if (savedTodoList.length > 0) {
+  if (savedTodoList && savedTodoList.length > 0) {
     todoList.value = savedTodoList;
   }
 };
